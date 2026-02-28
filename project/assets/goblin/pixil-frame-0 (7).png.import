@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmqkogp2cftnb"
-path="res://.godot/imported/goblin scout - silhouette all animations-run.png-e45cedb1325cb264779259a82ed14d62.ctex"
+uid="uid://d24trthwh6up7"
+path="res://.godot/imported/pixil-frame-0 (7).png-e2e28f7e9aebb42281deb659838de887.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/goblin/goblin scout - silhouette all animations-run.png"
-dest_files=["res://.godot/imported/goblin scout - silhouette all animations-run.png-e45cedb1325cb264779259a82ed14d62.ctex"]
+source_file="res://assets/goblin/pixil-frame-0 (7).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (7).png-e2e28f7e9aebb42281deb659838de887.ctex"]
 
 [params]
 
