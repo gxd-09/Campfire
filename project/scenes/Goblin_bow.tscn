@@ -1,37 +1,27 @@
-[gd_scene load_steps=12 format=3 uid="uid://ds8vrldr2eive"]
-
-[ext_resource type="Texture2D" uid="uid://deb54b5vnm0fc" path="res://assets/goblin/goblin scout - silhouette all animations-idle.png" id="1_gwwj0"]
+[gd_scene load_steps=11 format=3 uid="uid://br826nva6gi05"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a075g"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6iyqp"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vpqpx"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2g7cp"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ak4d0"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1662y"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ccfn7"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(384, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qfgu1"]
-atlas = ExtResource("1_gwwj0")
 region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ydbrc"]

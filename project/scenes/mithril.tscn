@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://bp3h51pb1yxfa"]
+[gd_scene load_steps=3 format=3 uid="uid://bp3h51pb1yxfa"]
 
-[node name="Mithril" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://bpwda74ef6piq" path="res://assets/mithril.png" id="1_6tqsv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xstnu"]
+size = Vector2(16, 16)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xstnu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6tqsv")
+region_enabled = true
+region_rect = Rect2(128, 16, 16, 16)

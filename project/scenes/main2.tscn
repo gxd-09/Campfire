@@ -10,16 +10,21 @@ distance = -220.0
 [node name="Main2" type="Node2D"]
 script = ExtResource("1_7pwm0")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Background" parent="." instance=ExtResource("2_xdoxa")]
 position = Vector2(-2, 2)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_xlafv")]
+[node name="Player" parent="." instance=ExtResource("3_xlafv")]
 position = Vector2(15, -92)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-15, 92)
+zoom = Vector2(2.6, 2.6)
+limit_top = -120
+limit_bottom = 125
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(15, -92)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-14, -2)
 shape = SubResource("WorldBoundaryShape2D_7pwm0")
