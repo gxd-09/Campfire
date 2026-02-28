@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://rg3y2os1hxe" path="res://scenes/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bm80jj5wbdlrg" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://byubhebkevt4w" path="res://scenes/background.tscn" id="2_0wfyh"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0wfyh"]
 
@@ -9,6 +10,7 @@
 script = ExtResource("1_0wfyh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -17,4 +19,9 @@ position = Vector2(-1, 177)
 shape = SubResource("WorldBoundaryShape2D_0wfyh")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_o5qli")]
+light_mask = 128
+visibility_layer = 128
 position = Vector2(-1, -117)
+
+[node name="Background" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(-35, 10)
