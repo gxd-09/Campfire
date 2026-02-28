@@ -1,10 +1,15 @@
 [gd_scene format=3 uid="uid://blhlbfvyqopyi"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_6adnx"]
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Node2D" type="Node2D" unique_id=1831127836]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+[node name="Node2D" type="Node2D" parent="." unique_id=1509983751]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D" unique_id=67850438]
 root_node = NodePath("../..")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D" unique_id=278165279]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/CharacterBody2D" unique_id=574487661]
+shape = SubResource("CircleShape2D_6adnx")
