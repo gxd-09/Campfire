@@ -1,3 +1,24 @@
-[gd_scene load_steps=0 format=3 uid="uid://dp633m6mc8n0r"]
+[gd_scene load_steps=2 format=3 uid="uid://dp633m6mc8n0r"]
 
-[node name="Node2D" type="Node2D" unique_id=1040966226]
+[sub_resource type="SpriteFrames" id="SpriteFrames_xt4n7"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_xt4n7")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
