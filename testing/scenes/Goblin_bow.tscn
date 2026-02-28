@@ -2,35 +2,35 @@
 
 [ext_resource type="Texture2D" uid="uid://deb54b5vnm0fc" path="res://assets/goblin/goblin scout - silhouette all animations-idle.png" id="1_gwwj0"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a075g"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4lkwi"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6iyqp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_a075g"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpqpx"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6iyqp"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2g7cp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpqpx"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(192, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ak4d0"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g7cp"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(256, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1662y"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ak4d0"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(320, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ccfn7"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1662y"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(384, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qfgu1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccfn7"]
 atlas = ExtResource("1_gwwj0")
 region = Rect2(448, 0, 64, 64)
 
@@ -42,6 +42,9 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4lkwi")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a075g")
 }, {
@@ -62,9 +65,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ccfn7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qfgu1")
 }],
 "loop": true,
 "name": &"idle",
@@ -74,13 +74,14 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_kd647"]
 radius = 6.0
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_ydbrc")
 animation = &"idle"
+frame_progress = 0.16439717
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1, 6)

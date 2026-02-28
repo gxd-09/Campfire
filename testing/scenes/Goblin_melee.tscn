@@ -2,39 +2,39 @@
 
 [ext_resource type="Texture2D" uid="uid://deb54b5vnm0fc" path="res://assets/goblin/goblin scout - silhouette all animations-idle.png" id="1_4lkwi"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a075g"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4lkwi"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6iyqp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_a075g"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpqpx"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6iyqp"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2g7cp"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpqpx"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(192, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ak4d0"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g7cp"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(256, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1662y"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ak4d0"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(320, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ccfn7"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1662y"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(384, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qfgu1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccfn7"]
 atlas = ExtResource("1_4lkwi")
 region = Rect2(448, 0, 64, 64)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xt4n7"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_qfgu1"]
 animations = [{
 "frames": [],
 "loop": true,
@@ -42,6 +42,9 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4lkwi")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a075g")
 }, {
@@ -62,9 +65,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ccfn7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qfgu1")
 }],
 "loop": true,
 "name": &"idle",
@@ -79,9 +79,8 @@ radius = 6.0
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-sprite_frames = SubResource("SpriteFrames_xt4n7")
+sprite_frames = SubResource("SpriteFrames_qfgu1")
 animation = &"idle"
-frame_progress = 0.50561917
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1, 6)
